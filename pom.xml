@@ -1,28 +1,41 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.dobrosi</groupId>
 	<artifactId>mediacloud</artifactId>
 	<version>1.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<properties>
-	</properties>
-<repositories>
-    <repository>
-        <id>4thline-repo</id>
-        <url>http://4thline.org/m2</url>
-        <snapshots>
-            <enabled>false</enabled> <!-- Or true, if you like to use unreleased code -->
-        </snapshots>
-    </repository>
-</repositories>
+	<repositories>
+		<repository>
+			<id>4thline-repo</id>
+			<url>http://4thline.org/m2</url>
+			<snapshots>
+				<enabled>false</enabled> <!-- Or true, if you like to use unreleased code -->
+			</snapshots>
+		</repository>
+	</repositories>
 
-<dependencies>
-    <dependency>
-        <groupId>org.fourthline.cling</groupId>
-        <artifactId>cling-core</artifactId>
-        <version>2.1.2</version>
-    </dependency>
-</dependencies>
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>info.picocli</groupId>
+			<artifactId>picocli</artifactId>
+			<version>3.9.5</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.fourthline.cling</groupId>
+			<artifactId>cling-core</artifactId>
+			<version>2.1.1</version>
+		</dependency>
+	</dependencies>
 
 </project>
