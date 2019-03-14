@@ -7,14 +7,22 @@
 
 	<properties>
 	</properties>
+<repositories>
+    <repository>
+        <id>4thline-repo</id>
+        <url>http://4thline.org/m2</url>
+        <snapshots>
+            <enabled>false</enabled> <!-- Or true, if you like to use unreleased code -->
+        </snapshots>
+    </repository>
+</repositories>
 
-	<dependencies>
-		<dependency>
-			<groupId>com.github.karsaig</groupId>
-			<artifactId>approvalcrest</artifactId>
-			<scope>test</scope>
-			<version>${approvalcrest.version}</version>
-		</dependency>
-	</dependencies>
+<dependencies>
+    <dependency>
+        <groupId>org.fourthline.cling</groupId>
+        <artifactId>cling-core</artifactId>
+        <version>2.1.2</version>
+    </dependency>
+</dependencies>
 
 </project>
